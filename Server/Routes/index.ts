@@ -4,13 +4,13 @@ const router = express.Router();
 /* Display home page. */
 router.get('/', function(req: express.Request, res: express.Response, next: express.NextFunction) 
 {
-  res.render('index', { title: 'Home', page: 'home' });
+  res.render('index', { title: 'Welcome', page: 'home' });
 });
 
 /* Display home page. */
 router.get('/home', function(req: express.Request, res: express.Response, next: express.NextFunction) 
 {
-  res.render('index', { title: 'Home', page: 'home' });
+  res.render('index', { title: 'Welcome', page: 'home' });
 });
 
 /* Display about page. */

@@ -1,5 +1,16 @@
 /* custom css goes here */
 
+/*set background of all children of container*/
+body main .container > * {
+    background-color:#ffffffa3;
+}
+
+/*vertical margins to compensate for header and sticky footer*/
+body {
+    margin-bottom: 58px;
+    background-color: #2196f347;
+}
+
 /*Custom navbar header and footer colors */
 .navColorCustom, .fixed-bottom {
     background-color: #301355;    
@@ -40,9 +51,6 @@
     height: 450px;
     background-color:#30135559;
 }
-
-/*vertical margins to compensate for header and sticky footer*/
-body {margin-bottom: 58px;}
 
 main h1,p {
     

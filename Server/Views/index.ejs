@@ -18,7 +18,13 @@
 
     <!-- Content Section -->
     <main>
-        <%- include('./content/' + page + '.ejs'); %>
+
+        <div class="container">    
+            <br><h1 class="heading"><%= title %></h1><br>
+
+            <%- include('./content/' + page + '.ejs'); %>
+
+        </div>
     </main>
 
     <!-- Site-wide Footer Section -->
