@@ -2,7 +2,7 @@
 
 /*set background of all children of container*/
 body main .container > * {
-    background-color:#ffffffa3;
+    background-color:#3013552e;
 }
 
 /*vertical margins to compensate for header and sticky footer*/
@@ -59,7 +59,7 @@ main h1,p {
 
 .heading {
     text-align: center; 
-    background: #b7adc4;
+    background-color: #b7adc4 !important;
     padding: 10px; 
 }
 
