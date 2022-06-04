@@ -1,9 +1,17 @@
 /* custom css goes here */
 
+/*
+File: app.css
+Name: Sanjay Mahabir
+Student Id: 301231274
+Date: June 4th 2022
+*/
+
+
 /*set background of all children of container*/
-body main .container > * {
+/*body main .container > * {
     background-color:#3013552e;
-}
+}*/
 
 /*vertical margins to compensate for header and sticky footer*/
 body {
