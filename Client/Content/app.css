@@ -10,6 +10,7 @@
     background-color: #b009e44a;  
     border: 1px solid #b6d243;  
     padding: 15px;
+    font-size: 18px;
 }
 
 .navbar-brand + span, .fixed-bottom {
@@ -35,28 +36,26 @@
 
 /*custom home page sliders*/
 
-.carousel-item {
-    
+.carousel-item {    
     height: 450px;
     background-color:#30135559;
 }
 
-/*Keep main content centered using flexbox, see here https://www.w3schools.com/howto/howto_css_center-vertical.asp */
-main {    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*vertical margins to compensate for header and sticky footer*/
+body {margin-bottom: 58px;}
 
-    width: 90%;
-    /*center main content with margin auto*/
-    /*vertical margins to compensate for header and sticky footer*/
-    margin: 10px auto 58px auto; 
-
+main h1,p {
+    
+    color: #301355;
 }
 
-/*fill main container*/
-#carouselExampleDark {width: 100%}
+.heading {
+    text-align: center; 
+    background: #b7adc4;
+    padding: 10px; 
+}
 
+/*centering logos and images in slider*/
 .d-block {
     display: block;
     margin: auto;
