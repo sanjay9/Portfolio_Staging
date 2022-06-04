@@ -1,1 +1,70 @@
 /* custom css goes here */
+
+/*Custom navbar header and footer colors */
+.navColorCustom, .fixed-bottom {
+    background-color: #301355;    
+}
+
+.navColorCustom .nav-item .nav-link {
+    color: #b6d243;
+    background-color: #b009e44a;  
+    border: 1px solid #b6d243;  
+    padding: 15px;
+}
+
+.navbar-brand + span, .fixed-bottom {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #b6d243;
+}
+
+.navColorCustom a:hover{
+    color: #73608b;
+    opacity: 0.5;
+}
+
+.navbar-toggler {
+    color: #b6d243;
+    border: 2px solid #b6d243;
+}
+
+.navbar-brand img, img.d-block{
+    border-radius: 15%; 
+    border: 3px solid gray;
+}
+
+/*custom home page sliders*/
+
+.carousel-item {
+    
+    height: 450px;
+    background-color:#30135559;
+}
+
+/*Keep main content centered using flexbox, see here https://www.w3schools.com/howto/howto_css_center-vertical.asp */
+main {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    /*center main content with margin auto*/
+    /*vertical margins to compensate for header and sticky footer*/
+    margin: 10px auto 58px auto; 
+
+}
+
+/*fill main container*/
+#carouselExampleDark {width: 100%}
+
+.d-block {
+    display: block;
+    margin: auto;
+    height: 270px;
+    width: auto;
+    color: #301355;
+}
+
+.d-block:hover {opacity: 0.5;}
+
+p { font-size: 1.3em ;}
