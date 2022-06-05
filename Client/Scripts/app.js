@@ -1,6 +1,6 @@
 "use strict";
 $("#submitBtn").on("click", function () {
-    localStorage.setItem("name", $("#fname").val());
+    localStorage.setItem("fname", $("#fname").val());
     localStorage.setItem("lname", $("#lname").val());
     localStorage.setItem("pnum", $("#pnum").val());
     localStorage.setItem("email", $("#email").val());
@@ -8,11 +8,11 @@ $("#submitBtn").on("click", function () {
     window.location.assign("/");
     alert("storing data");
 });
-$(document).ready(function () {
-    if ("name" in localStorage) {
-        $("#fname").val(localStorage.getItem("name"));
+$(function () {
+    if ("fname" in localStorage) {
+        $("#fname").val(localStorage.getItem("fname"));
     }
-    if ("name" in localStorage) {
+    if ("lname" in localStorage) {
         $("#lname").val(localStorage.getItem("lname"));
     }
     if ("pnum" in localStorage) {

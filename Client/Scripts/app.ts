@@ -11,7 +11,7 @@ Date: June 4th 2022
 $("#submitBtn").on("click",function(){
     
 
-    localStorage.setItem("name", $("#fname").val() as string);
+    localStorage.setItem("fname", $("#fname").val() as string);
     localStorage.setItem("lname", $("#lname").val() as string);
     localStorage.setItem("pnum", $("#pnum").val() as string);
     localStorage.setItem("email", $("#email").val() as string);
@@ -22,14 +22,14 @@ $("#submitBtn").on("click",function(){
 
   });
 
-//called on contact page when the body loads
+//called on contact page when the page loads
 //values previously entered are loaded back into form
-$(document).ready(function(){
+$(function(){
    
-    if("name" in localStorage){
-        $("#fname").val(localStorage.getItem("name") as string);
+    if("fname" in localStorage){
+        $("#fname").val(localStorage.getItem("fname") as string);
     }
-    if("name" in localStorage){
+    if("lname" in localStorage){
         $("#lname").val(localStorage.getItem("lname") as string);
     }
     if("pnum" in localStorage){
