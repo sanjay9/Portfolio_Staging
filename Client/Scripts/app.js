@@ -1,4 +1,31 @@
 "use strict";
+$("#submitBtn").on("click", function () {
+    localStorage.setItem("name", $("#fname").val());
+    localStorage.setItem("lname", $("#lname").val());
+    localStorage.setItem("pnum", $("#pnum").val());
+    localStorage.setItem("email", $("#email").val());
+    localStorage.setItem("message", $("#message").val());
+    window.location.assign("/");
+    alert("storing data");
+});
+$(document).ready(function () {
+    if ("name" in localStorage) {
+        $("#fname").val(localStorage.getItem("name"));
+    }
+    if ("name" in localStorage) {
+        $("#lname").val(localStorage.getItem("lname"));
+    }
+    if ("pnum" in localStorage) {
+        $("#pnum").val(localStorage.getItem("pnum"));
+    }
+    if ("email" in localStorage) {
+        $("#email").val(localStorage.getItem("email"));
+    }
+    if ("message" in localStorage) {
+        $("#message").val(localStorage.getItem("message"));
+    }
+    console.log("success");
+});
 (function () {
     function Start() {
         console.log("App Started!");
